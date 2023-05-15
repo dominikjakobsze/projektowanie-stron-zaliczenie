@@ -1,0 +1,19 @@
+Wykonane przez - Grupa 04:
+    Dominik Jakobsze
+    Mateusz Roszak
+    Krystian Stachowski
+
+Bezpośrednie linki do stron:
+    index - http://projektowanie.devjakobsze.pl/
+    category - http://projektowanie.devjakobsze.pl/category.html
+    product - http://projektowanie.devjakobsze.pl/product.html
+
+Liczba stron: 3
+Technologie: HTML, CSS (Framework TailwindCSS - Flexbox, Grid)
+Walidacja HTML: Brak błędów
+Walidacja CSS: Brak błędów, ale pojawiają się ostrzezenia związane z silnikiem TailwindCSS (dynamic variables, --webkit itd...)
+Responsywna grafika: srcset + res
+SEO: Tak, itemscope, itemprop, content, alt, h1-h6, section, article, nav, footer, itd...
+Estetyka: 5 barw wykorzystanych, motyw jasny, czcionka - base Tailwind
+Charakter strony: Strona statyczna, brak dynamizmu, brak bazy danych, brak kodu napędzającego dynamikę np. slider, carousel itd... - jedynie menu mobilne po "click" w logo otwiera ukryte menu
+Responsywność: od 320px, od 768px, od 1024px, do 2000px 

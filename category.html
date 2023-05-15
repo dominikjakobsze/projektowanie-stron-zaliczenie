@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Shopper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/general.css">
+</head>
+
+<body class="w-screen flex flex-col items-center justify-start">
+    <div class="w-full max-w-[2100px]">
+    
+    <nav itemscope class="shadow-bottom sticky top-0 z-1000" itemtype="https://schema.org/Product">
+        <ul class="hidden md:flex text-sm font-medium w-full bg-gray-100 flex-nowrap flex-row gap-5 p-2 items-center justify-center">
+            <li class="cursor-pointer w-[60px] h-[60px]">
+                <img src="src/image/nlogo.png" alt="logo firmy Apple" class="w-full h-full object-contain" itemprop="image"
+                srcset="src/image/nlogo.png 640w,
+                        src/image/nlogo.png 1024w,
+                        src/image/nlogo.png 1440w,
+                        src/image/nlogo.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+            </li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="MacBook" content="MacBook">MacBook</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="AirPods" content="AirPods">AirPods</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="iMac" content="iMac">iMac</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="Apple Watch" content="Apple Watch">Apple Watch</a></li>
+        </ul>
+        <ul class="flex md:hidden text-sm font-medium w-full bg-gray-100 flex-wrap flex-col p-2 items-center justify-center">
+            <li id="logo-menu" class="cursor-pointer w-[40px] h-[40px]">
+                <img src="src/image/nlogo.png" alt="logo firmy Apple" class="w-full h-full object-contain" itemprop="image"
+                srcset="src/image/nlogo.png 640w,
+                        src/image/nlogo.png 1024w,
+                        src/image/nlogo.png 1440w,
+                        src/image/nlogo.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+            </li>
+            <li>
+                <ul id="hidden-menu" class="mt-5 hidden md:hidden text-sm gap-5 font-medium w-full bg-gray-100 flex-wrap flex-col p-2 items-center justify-center">
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="MacBook">MacBook</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="AirPods">AirPods</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="iMac">iMac</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="Apple Watch">Apple Watch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>      
+
+
+
+      <section class="mt-10 w-full flex flex-col flex-wrap items-center justify-center gap-5 p-5" itemscope itemtype="https://schema.org/Product">
+        <h2 class="text-3xl text-blue-500 w-full text-start" itemprop="iPhone" content="iPhone">iPhone</h2>
+        <p class="text-sm text-gray-400 w-full text-start" itemprop="iPhone opis kategorii" content="iPhone opis kategorii">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+      </section>
+
+
+
+      <section class="mt-10 w-full flex flex-row flex-wrap gap-5 p-5" itemscope itemtype="https://schema.org/Product">
+        <h2 class="mb-5 flex-[0_0_100%] text-3xl text-blue-500 w-full text-start" itemprop="iPhone" content="iPhone">Poznaj całą serię!</h2>
+        <article class="cursor-pointer border border-gray-400 flex-[0_0_100%] md:flex-[0_0_30%] rounded-xl py-1 px-4 flex flex-row gap-2 flex-nowrap items-center justify-center">
+            <img src="src/image/category/ip-1.png" alt="zdjecie iPhone" class="cursor-pointer flex-[0_0_40%] max-h-[80px] object-contain" itemprop="image"
+            srcset="src/image/category/ip-1.png 640w,
+                    src/image/category/ip-1.png 1024w,
+                    src/image/category/ip-1.png 1440w,
+                    src/image/category/ip-1.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                   (max-width: 1024px) 1024px,
+                   (max-width: 1440px) 1440px,
+                   1920px">
+            <h2 class="flex-[0_0_50%] text-center text-blue-500" itemprop="iPhone Serie" content="iPhone Serie">iPhone 13</h2>
+        </article>
+        <article class="cursor-pointer border border-gray-400 flex-[0_0_100%] md:flex-[0_0_30%] rounded-xl py-1 px-4 flex flex-row gap-2 flex-nowrap items-center justify-center">
+            <img src="src/image/category/ip-2.png" alt="zdjecie iPhone" class="cursor-pointer flex-[0_0_40%] max-h-[80px] object-contain" itemprop="image"
+            srcset="src/image/category/ip-2.png 640w,
+                    src/image/category/ip-2.png 1024w,
+                    src/image/category/ip-2.png 1440w,
+                    src/image/category/ip-2.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                   (max-width: 1024px) 1024px,
+                   (max-width: 1440px) 1440px,
+                   1920px">
+            <h2 class="flex-[0_0_50%] text-center text-blue-500" itemprop="iPhone Serie" content="iPhone Serie">iPhone 14</h2>
+        </article>
+        <article class="cursor-pointer border border-gray-400 flex-[0_0_100%] md:flex-[0_0_30%] rounded-xl py-1 px-4 flex flex-row gap-2 flex-nowrap items-center justify-center">
+            <img src="src/image/category/ip-3.png" alt="zdjecie iPhone" class="cursor-pointer flex-[0_0_40%] max-h-[80px] object-contain" itemprop="image"
+            srcset="src/image/category/ip-3.png 640w,
+                    src/image/category/ip-3.png 1024w,
+                    src/image/category/ip-3.png 1440w,
+                    src/image/category/ip-3.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                   (max-width: 1024px) 1024px,
+                   (max-width: 1440px) 1440px,
+                   1920px">
+            <h2 class="flex-[0_0_50%] text-center text-blue-500" itemprop="iPhone Serie" content="iPhone Serie">iPhone 12</h2>
+        </article>
+        <article class="cursor-pointer border border-gray-400 flex-[0_0_100%] md:flex-[0_0_30%] rounded-xl py-1 px-4 flex flex-row gap-2 flex-nowrap items-center justify-center">
+            <img src="src/image/category/ip-2.png" alt="zdjecie iPhone" class="cursor-pointer flex-[0_0_40%] max-h-[80px] object-contain" itemprop="image"
+            srcset="src/image/category/ip-2.png 640w,
+                    src/image/category/ip-2.png 1024w,
+                    src/image/category/ip-2.png 1440w,
+                    src/image/category/ip-2.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                   (max-width: 1024px) 1024px,
+                   (max-width: 1440px) 1440px,
+                   1920px">
+            <h2 class="flex-[0_0_50%] text-center text-blue-500" itemprop="iPhone Serie" content="iPhone Serie">iPhone 11</h2>
+        </article>
+      </section>
+
+
+      <section class="mt-5 w-full bg-gray-50 py-4 px-3 md:px-5 flex flex-row flex-wrap gap-4 items-center justify-center" itemscope itemtype="https://schema.org/Product">
+            <h4 class="hidden">Toolbar</h4>
+            <img src="src/image/icons/nwindow.png" alt="widocznosc" class="cursor-pointer w-[25px] h-[25px] object-contain" itemprop="image"
+            srcset="src/image/icons/nwindow.png 640w,
+                    src/image/icons/nwindow.png 1024w,
+                    src/image/icons/nwindow.png 1440w,
+                    src/image/icons/nwindow.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                (max-width: 1024px) 1024px,
+                (max-width: 1440px) 1440px,
+                1920px">
+            <img src="src/image/icons/list.png" alt="widocznosc" class="cursor-pointer w-[25px] h-[25px] object-contain" itemprop="image"
+            srcset="src/image/icons/list.png 640w,
+                    src/image/icons/list.png 1024w,
+                    src/image/icons/list.png 1440w,
+                    src/image/icons/list.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                (max-width: 1024px) 1024px,
+                (max-width: 1440px) 1440px,
+                1920px">
+            <article class="flex flex-row flex-wrap gap-4 items-center justify-end flex-[0_0_60%] md:flex-[0_0_80%]">
+                <h6 itemprop="navigation" content="current" class="bg-gray-50 px-4 py-2 font-semibold cursor-pointer text-base text-blue-500 rounded-lg border border-blue-500">1</h6>
+                <h6>z</h6>
+                <h6 itemprop="navigation" content="max" class="bg-blue-500 px-4 py-2 font-semibold cursor-pointer text-base text-gray-50 rounded-lg border border-blue-500">7</h6>
+            </article>
+      </section>
+
+
+      <section class="w-full grid grid-cols-2 md:grid-cols-3 p-5 gap-2" itemscope itemtype="https://schema.org/Product">
+        <h1 class="hidden">Wszystkie Produkty</h1>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2">
+                <img src="src/image/category/ip-1.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-1.png 640w,
+                        src/image/category/ip-1.png 1024w,
+                        src/image/category/ip-1.png 1440w,
+                        src/image/category/ip-1.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 12 6,1" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">5500.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-1.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-1.png 640w,
+                        src/image/category/ip-1.png 1024w,
+                        src/image/category/ip-1.png 1440w,
+                        src/image/category/ip-1.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 12 Pro 6,1" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">6300.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-2.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-2.png 640w,
+                        src/image/category/ip-2.png 1024w,
+                        src/image/category/ip-2.png 1440w,
+                        src/image/category/ip-2.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 13 Pro Max 6,1" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">7300.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-2.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-2.png 640w,
+                        src/image/category/ip-2.png 1024w,
+                        src/image/category/ip-2.png 1440w,
+                        src/image/category/ip-2.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 13 Pro Max 6,7" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">7700.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-4.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-4.png 640w,
+                        src/image/category/ip-4.png 1024w,
+                        src/image/category/ip-4.png 1440w,
+                        src/image/category/ip-4.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 14 6,7" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">8700.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-4.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-4.png 640w,
+                        src/image/category/ip-4.png 1024w,
+                        src/image/category/ip-4.png 1440w,
+                        src/image/category/ip-4.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 14 6,1" 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">8000.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-5.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-5.png 640w,
+                        src/image/category/ip-5.png 1024w,
+                        src/image/category/ip-5.png 1440w,
+                        src/image/category/ip-5.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone X 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">3000.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-5.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-5.png 640w,
+                        src/image/category/ip-5.png 1024w,
+                        src/image/category/ip-5.png 1440w,
+                        src/image/category/ip-5.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone X 512</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">4170.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-6.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-6.png 640w,
+                        src/image/category/ip-6.png 1024w,
+                        src/image/category/ip-6.png 1440w,
+                        src/image/category/ip-6.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 12 Mini 128</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">4170.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+        <a class="shadow border border-gray-200" href="./product.html">
+            <article class="w-full grid grid-cols-1 place-items-center text-center p-2 gap-2  ">
+                <img src="src/image/category/ip-6.png" alt="zdjecie iPhone" class="cursor-pointer w-full max-h-[200px] object-contain" itemprop="image"
+                srcset="src/image/category/ip-6.png 640w,
+                        src/image/category/ip-6.png 1024w,
+                        src/image/category/ip-6.png 1440w,
+                        src/image/category/ip-6.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+                <h3 class="w-full text-base text-blue-500" itemprop="iPhone Title" content="title">iPhone 12 Mini 256</h3>
+                <h4 class="w-full font-semibold text-sm" itemprop="iPhone Price" content="price">4810.00 zł</h4>
+                <p class="w-full truncate-multi-line text-sm text-gray-400" itemprop="iPhone Description" content="description">iPhone to linia smartfonów produkowanych przez firmę Apple. Pierwszy iPhone został wprowadzony na rynek w 2007 roku i od tamtej pory cieszy się dużą popularnością wśród użytkowników na całym świecie. iPhone oferuje wiele funkcji, w tym doskonałą jakość zdjęć i filmów, łatwy dostęp do aplikacji i szybki dostęp do internetu. Jest również znany ze swojego eleganckiego designu i innowacyjnych funkcji, takich jak Face ID i bezprzewodowe ładowanie.</p>
+            </article>
+        </a>
+    </section>
+
+
+      <section class="text-sm w-full bg-gray-50 py-4 px-3 md:px-5 flex flex-row flex-wrap gap-4 items-center justify-center" itemscope itemtype="https://schema.org/Product">
+        <h5 itemprop="change" content="poprzednie" class="flex-[0_0_40%] hover:text-blue-500 text-start p-2 text-gray-400 cursor-pointer">poprzednie</h5>
+        <h5 itemprop="change" content="następne" class="flex-[0_0_40%] hover:text-blue-500 text-end p-2 text-gray-400 cursor-pointer">następne</h5>
+    </section>
+
+
+
+
+      <footer class="w-full p-5 bg-white shadow-bottom" itemscope itemtype="https://schema.org/Product">
+        <nav>
+          <ul class="flex flex-wrap flex-col gap-3 text-xs items-start justify-center">
+            <li class="w-full flex flex-row items-center justify-center">
+                <a href="./index.html">
+                    <img src="src/image/nlogo.png" alt="logo firmy Apple" class="cursor-pointer w-[60px] h-[60px] object-contain" itemprop="image"
+                    srcset="src/image/nlogo.png 640w,
+                            src/image/nlogo.png 1024w,
+                            src/image/nlogo.png 1440w,
+                            src/image/nlogo.png 1920w"
+                    sizes="(max-width: 640px) 640px,
+                           (max-width: 1024px) 1024px,
+                           (max-width: 1440px) 1440px,
+                           1920px">
+                </a>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Informacje</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">Regulamin sklepu</li>
+                    <li itemprop="FooterItem" content="Footer">Regulamin serwisu</li>
+                    <li itemprop="FooterItem" content="Footer">Zwroty</li>
+                    <li itemprop="FooterItem" content="Footer">Polityka prywatności</li>
+                    <li itemprop="FooterItem" content="Footer">Ekologia</li>
+                    <li itemprop="FooterItem" content="Footer">Dostawy</li>
+                </ul>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Produkty</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">iMac</li>
+                    <li itemprop="FooterItem" content="Footer">Apple Watch</li>
+                    <li itemprop="FooterItem" content="Footer">MacBook</li>
+                    <li itemprop="FooterItem" content="Footer">AirPods</li>
+                </ul>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Zakupy</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">Tax Free</li>
+                    <li itemprop="FooterItem" content="Footer">Raty</li>
+                    <li itemprop="FooterItem" content="Footer">Płatności</li>
+                    <li itemprop="FooterItem" content="Footer">AirPods</li>
+                    <li itemprop="FooterItem" content="Footer">Karta podarunkowa</li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+  </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const logoMenu = document.getElementById("logo-menu");
+      const hiddenMenu = document.getElementById("hidden-menu");
+    
+      logoMenu.addEventListener("click", function() {
+        if (hiddenMenu.style.display === "none" || hiddenMenu.style.display === "") {
+          hiddenMenu.style.display = "flex";
+        } else {
+          hiddenMenu.style.display = "none";
+        }
+      });
+    });
+</script>    
+
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Shopper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="src/general.css">
+</head>
+
+<body class="w-screen flex flex-col items-center justify-start">
+    <div class="w-full max-w-[2100px]">
+    
+    <nav itemscope class="shadow-bottom sticky top-0 z-1000" itemtype="https://schema.org/Product">
+        <ul class="hidden md:flex text-sm font-medium w-full bg-gray-100 flex-nowrap flex-row gap-5 p-2 items-center justify-center">
+            <li class="cursor-pointer w-[60px] h-[60px]">
+                <img src="src/image/nlogo.png" alt="logo firmy Apple" class="w-full h-full object-contain" itemprop="image"
+                srcset="src/image/nlogo.png 640w,
+                        src/image/nlogo.png 1024w,
+                        src/image/nlogo.png 1440w,
+                        src/image/nlogo.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+            </li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="MacBook" content="MacBook">MacBook</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="AirPods" content="AirPods">AirPods</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="iMac" content="iMac">iMac</a></li>
+            <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="Apple Watch" content="Apple Watch">Apple Watch</a></li>
+        </ul>
+        <ul class="flex md:hidden text-sm font-medium w-full bg-gray-100 flex-wrap flex-col p-2 items-center justify-center">
+            <li id="logo-menu" class="cursor-pointer w-[40px] h-[40px]">
+                <img src="src/image/nlogo.png" alt="logo firmy Apple" class="w-full h-full object-contain" itemprop="image"
+                srcset="src/image/nlogo.png 640w,
+                        src/image/nlogo.png 1024w,
+                        src/image/nlogo.png 1440w,
+                        src/image/nlogo.png 1920w"
+                sizes="(max-width: 640px) 640px,
+                       (max-width: 1024px) 1024px,
+                       (max-width: 1440px) 1440px,
+                       1920px">
+            </li>
+            <li>
+                <ul id="hidden-menu" class="mt-5 hidden md:hidden text-sm gap-5 font-medium w-full bg-gray-100 flex-wrap flex-col p-2 items-center justify-center">
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="MacBook">MacBook</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="AirPods">AirPods</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="iMac">iMac</a></li>
+                    <li class="cursor-pointer hover:text-blue-500"><a href="./category.html" itemprop="Apple Watch">Apple Watch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>         
+
+
+      <section class="w-full min-h-[100px] p-5 mt-10 mb-10 flex flex-col flex-wrap gap-5" itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="productInformation" content="MacBook Air 13" class="mb-10 mt-10 w-full text-center text-3xl font-bold">MacBook Air 13"</h2>
+            <article class="w-full min-h-[100px] flex flex-row flex-wrap items-center justify-center gap-5">
+                <h6 class="hidden">Product overwiew</h6>
+                <div class="flex-[0_0_100%] md:flex-[0_0_67%] flex flex-col flex-wrap  gap-5">
+                    <img itemprop="image" src="src/image/product/macbook-1.png" alt="zdjęcie MacBook" 
+                    class="object-contain w-full max-h-[300px] pointer-events-none"
+                    srcset="src/image/product/macbook-1.png 640w,
+                        src/image/product/macbook-1.png 1024w,
+                        src/image/product/macbook-1.png 1440w,
+                        src/image/product/macbook-1.png 1920w"
+                    sizes="(max-width: 640px) 640px,
+                           (max-width: 1024px) 1024px,
+                           (max-width: 1440px) 1440px,
+                           1920px">
+                    <div class="w-full flex flex-row justify-center items-center gap-5">
+                        <img itemprop="image" src="src/image/product/macbook-1.png" alt="zdjęcie MacBook" 
+                        class="object-contain w-[60px] h-[60px] md:w-[80px] md:h-[80px] pointer-events-none bg-gray-100"
+                        srcset="src/image/product/macbook-1.png 640w,
+                            src/image/product/macbook-1.png 1024w,
+                            src/image/product/macbook-1.png 1440w,
+                            src/image/product/macbook-1.png 1920w"
+                        sizes="(max-width: 640px) 640px,
+                               (max-width: 1024px) 1024px,
+                               (max-width: 1440px) 1440px,
+                               1920px">
+                        <img itemprop="image" src="src/image/product/macbook-2.png" alt="zdjęcie MacBook" 
+                        class="object-contain w-[60px] h-[60px] md:w-[80px] md:h-[80px] pointer-events-none bg-gray-100"
+                        srcset="src/image/product/macbook-2.png 640w,
+                            src/image/product/macbook-2.png 1024w,
+                            src/image/product/macbook-2.png 1440w,
+                            src/image/product/macbook-2.png 1920w"
+                        sizes="(max-width: 640px) 640px,
+                                (max-width: 1024px) 1024px,
+                                (max-width: 1440px) 1440px,
+                                1920px">
+                        <img itemprop="image" src="src/image/product/macbook-3.png" alt="zdjęcie MacBook" 
+                        class="object-contain w-[60px] h-[60px] md:w-[80px] md:h-[80px] pointer-events-none bg-gray-100"
+                        srcset="src/image/product/macbook-3.png 640w,
+                            src/image/product/macbook-3.png 1024w,
+                            src/image/product/macbook-3.png 1440w,
+                            src/image/product/macbook-3.png 1920w"
+                        sizes="(max-width: 640px) 640px,
+                                (max-width: 1024px) 1024px,
+                                (max-width: 1440px) 1440px,
+                                1920px">
+                    </div>
+                </div>
+                <div class="flex-[0_0_100%] md:flex-[0_0_28%] self-start shadow-bottom p-3 flex flex-col items-center justify-center gap-5">
+                    <img src="src/image/nlogo.png" alt="logo firmy Apple" class="mt-10 cursor-pointer w-[60px] h-[60px] object-contain" itemprop="image"
+                    srcset="src/image/nlogo.png 640w,
+                            src/image/nlogo.png 1024w,
+                            src/image/nlogo.png 1440w,
+                            src/image/nlogo.png 1920w"
+                    sizes="(max-width: 640px) 640px,
+                           (max-width: 1024px) 1024px,
+                           (max-width: 1440px) 1440px,
+                           1920px">
+                    <h6 itemprop="productInformation" content="MacBook Air 13" class="text-base font-medium">7160.00 zł</h6>
+                    <h2 itemprop="productInformation" content="MacBook Air 13" class="font-bold cursor-pointer mb-10 text-md text-white bg-blue-500 py-1 px-5 rounded-lg">Dodaj do koszyka</h2>
+                </div>
+            </article>
+      </section>
+
+
+      <section class="items-center justify-center gap-10 text-sm md:text-lg text-gray-400 font-medium w-full bg-gray-100 p-5 flex flex-row flex-wrap" itemscope itemtype="https://schema.org/Product">
+        <h2 itemprop="productInformation" content="MacBook Air 13" class="text-blue-500 cursor-pointer"> Opis</h2>
+        <h2 itemprop="productInformation" content="MacBook Air 13" class="cursor-pointer">Specyfikacja</h2>
+        <h2 itemprop="productInformation" content="MacBook Air 13" class="cursor-pointer">Galeria</h2>
+      </section>
+
+
+    
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Opis" content="Opis Produktu">Opis Produktu</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3">
+            <h2 class="text-blue-500 text-xl text-center md:text-start w-full font-medium" itemprop="Opis" content="Opis Produktu">
+                ULTRAPRZENOŚNA MOC
+            </h2>
+            <p class="text-sm" itemprop="Opis" content="Opis Produktu">
+                Najlżejszy i najcieńszy z notebooków APPLE teraz w jeszcze szybszej wersji! Dzięki opartemu o najnowsze technologie czipowi APPLE M1 procesor działa nawet do 3,5 razy szybciej. Do tego nawet 5x szybszy procesor graficzny. Nowy MacBook Air został wyposażony w najbardziej zaawansowany system APPLE Neural Engine, który umożliwia nawet 9 razy szybsze samouczenie urządzenia. Do tego ultramocna bateria oraz bezszelestny wentylator. A to jeszcze nie wszystko!
+            </p>
+        </article>
+    </section>
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Opis" content="Opis Produktu">Opis Produktu</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3">
+            <h2 class="text-blue-500 text-xl text-center md:text-start w-full font-medium" itemprop="Opis" content="Opis Produktu">
+                MAŁA, WIELKA ZMIANA
+            </h2>
+            <p class="text-sm" itemprop="Opis" content="Opis Produktu">
+                APPLE M1 to pierwszy czip zaprojektowany specjalnie dla Maca. W tym miniaturowym czipie mieści się wszystko – system jednoukładowy SoC wyposażony w 16 miliardów tranzystorów, CPU, GPU oraz system Neural Engine i system I/O. Czip APPLE M1 nie tylko jest pełen najnowocześniejszych technologii, ale także najbardziej energooszczędny w branży. Do tego APPLE MacBook Air został wyposażony w dysk SSD o pojemności 256 GB. To zupełnie nowy rozdział w historii technologii.
+            </p>
+        </article>
+    </section>
+
+
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Zdjęcia" content="Zdjęcia Produktu">Zdjęcia Produktu</h6>
+        <article class="w-full grid grid-cols-1 md:grid-cols-2 gap-3 place-items-center">
+            <h4 class="hidden" itemprop="Galeria Zdjęć" content="Galeria zdjęć produktu">Zdjęcia Produktu</h4>
+            <img itemprop="image" src="src/image/product/macbook-1.png" alt="zdjęcie MacBook" 
+            class="w-full object-contain pointer-events-none bg-gray-100 h-[300px]"
+            srcset="src/image/product/macbook-1.png 640w,
+                src/image/product/macbook-1.png 1024w,
+                src/image/product/macbook-1.png 1440w,
+                src/image/product/macbook-1.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                    (max-width: 1024px) 1024px,
+                    (max-width: 1440px) 1440px,
+                    1920px">
+            <img itemprop="image" src="src/image/product/macbook-2.png" alt="zdjęcie MacBook" 
+            class="w-full object-contain pointer-events-none bg-gray-100 h-[300px]"
+            srcset="src/image/product/macbook-2.png 640w,
+                src/image/product/macbook-2.png 1024w,
+                src/image/product/macbook-2.png 1440w,
+                src/image/product/macbook-2.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                    (max-width: 1024px) 1024px,
+                    (max-width: 1440px) 1440px,
+                    1920px">
+            <img itemprop="image" src="src/image/product/macbook-3.png" alt="zdjęcie MacBook" 
+            class="w-full object-contain pointer-events-none bg-gray-100 h-[200px]"
+            srcset="src/image/product/macbook-3.png 640w,
+                src/image/product/macbook-3.png 1024w,
+                src/image/product/macbook-3.png 1440w,
+                src/image/product/macbook-3.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                    (max-width: 1024px) 1024px,
+                    (max-width: 1440px) 1440px,
+                    1920px">
+            <img itemprop="image" src="src/image/product/macbook-4.png" alt="zdjęcie MacBook" 
+            class="w-full object-contain pointer-events-none bg-gray-100 h-[200px]"
+            srcset="src/image/product/macbook-4.png 640w,
+                src/image/product/macbook-4.png 1024w,
+                src/image/product/macbook-4.png 1440w,
+                src/image/product/macbook-4.png 1920w"
+            sizes="(max-width: 640px) 640px,
+                    (max-width: 1024px) 1024px,
+                    (max-width: 1440px) 1440px,
+                    1920px">
+        </article>
+    </section>
+
+
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Opis" content="Opis Produktu">Opis Produktu</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3">
+            <h2 class="text-blue-500 text-xl text-center md:text-start w-full font-medium" itemprop="Opis" content="Opis Produktu">
+                SZYBSZY NIŻ KIEDYKOLWIEK
+            </h2>
+            <p class="text-sm" itemprop="Opis" content="Opis Produktu">
+                Czip APPLE M1 posiada najszybszy procesor w historii APPLE. Dzięki temu niestraszne mu żadne zadania – montuj filmy najwyższej jakości, graj w najnowsze gry, twórz niepowtarzalne grafiki – najnowszy MacBook Air pozwoli ci na to wszystko, zachowując idealną płynność. Nowy procesor nie tylko jest 3,5 razy szybszy niż poprzedni, jest również niezwykle energooszczędny, pobiera dziesięć razy mniej energii niż poprzednia generacja.
+            </p>
+        </article>
+    </section>
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Opis" content="Opis Produktu">Opis Produktu</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3">
+            <h2 class="text-blue-500 text-xl text-center md:text-start w-full font-medium" itemprop="Opis" content="Opis Produktu">
+                NIEWIARYGODNA GRAFIKA
+            </h2>
+            <p class="text-sm" itemprop="Opis" content="Opis Produktu">
+                Wyposażony w czip APPLE M1 MacBook Air doskonale poradzi sobie z przetworzeniem grafiki najnowszej generacji. Teraz możesz jednocześnie odtwarzać i edytować kilka strumieni wideo w pełnej rozdzielczości 4K, nie tracąc ani jednego szczegółu. To najszybszy zintegrowany układ graficzny na świecie w komputerach osobistych. 5 razy szybszy niż poprzednia generacja!
+            </p>
+        </article>
+    </section>
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-10" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Opis" content="Opis Produktu">Opis Produktu</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3">
+            <h2 class="text-blue-500 text-xl text-center md:text-start w-full font-medium" itemprop="Opis" content="Opis Produktu">
+                SAMOUCZENIE APLIKACJI
+            </h2>
+            <p class="text-sm" itemprop="Opis" content="Opis Produktu">
+                Dzięki 16-rdzeniowemu systemowi Neural Engine samouczenie stało się do 9 razy szybsze. To niezwykłe osiągnięcie pozwala na to, by aplikacje automatycznie retuszowały zdjęcia czy zwiększały precyzję takich narzędzi jak różdżka, czy filtry dźwięku – wszystko na najwyższym, profesjonalnym poziomie. Dedykowane akceleratory ML wykują nawet bilion operacji na sekundę. Teraz niemożliwe staje się możliwe.
+            </p>
+        </article>
+    </section>
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-5" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">Informacje dodatkowe</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3 bg-gray-100 justify-center items-center p-5 rounded-3xl">
+            <h2 class="text-blue-500 text-center text-base w-full font-medium" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">
+                12 MIESIĘCY GWARANCJI OD APPLE
+            </h2>
+            <p class="text-xs text-gray-400 text-center" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">
+                Roczna gwarancja Apple to dobrowolna gwarancja udzielona przez producenta. Na jej mocy użytkownik uzyskuje uprawnienia inne niż przewidziane przez prawo konsumenckie, w tym w szczególności uprawnienia dotyczące produktów niezgodnych z umową.
+                Uprawnienia wynikające z rocznej gwarancji Apple uzupełniają zatem (a nie zastępują) uprawnienia wynikające z prawa konsumenckiego.           
+            </p>
+        </article>
+    </section>
+
+    <section class="w-full flex flex-col flex-wrap gap-5 p-5" itemscope itemtype="https://schema.org/Product">
+        <h6 class="hidden" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">Informacje dodatkowe</h6>
+        <article class="w-full flex flex-col flex-wrap gap-3 bg-gray-100 justify-center items-center p-5 rounded-3xl">
+            <h2 class="text-blue-500 text-center text-base w-full font-medium" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">
+                24 MIESIĘCE NA REKLAMACJE
+            </h2>
+            <p class="text-xs text-gray-400 text-center" itemprop="Informacje dodatkowe" content="Informacje dodatkowe">
+                Kazdy produkt na terenie UE jest objęty 2 letnią mozliwością zwrotu w przypadku wadliwego działania. W przypadku wystąpienia wady w okresie 24 miesięcy od daty zakupu, Klient ma prawo do złożenia reklamacji. W celu złożenia reklamacji należy skontaktować się z naszym działem obsługi klienta.
+            </p>
+        </article>
+    </section>
+
+      <footer class="w-full p-5 bg-white shadow-bottom" itemscope itemtype="https://schema.org/Product">
+        <nav>
+          <ul class="flex flex-wrap flex-col gap-3 text-xs items-start justify-center">
+            <li class="w-full flex flex-row items-center justify-center">
+                <a href="./index.html">
+                    <img src="src/image/nlogo.png" alt="logo firmy Apple" class="cursor-pointer w-[60px] h-[60px] object-contain" itemprop="image"
+                    srcset="src/image/nlogo.png 640w,
+                            src/image/nlogo.png 1024w,
+                            src/image/nlogo.png 1440w,
+                            src/image/nlogo.png 1920w"
+                    sizes="(max-width: 640px) 640px,
+                           (max-width: 1024px) 1024px,
+                           (max-width: 1440px) 1440px,
+                           1920px">
+                </a>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Informacje</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">Regulamin sklepu</li>
+                    <li itemprop="FooterItem" content="Footer">Regulamin serwisu</li>
+                    <li itemprop="FooterItem" content="Footer">Zwroty</li>
+                    <li itemprop="FooterItem" content="Footer">Polityka prywatności</li>
+                    <li itemprop="FooterItem" content="Footer">Ekologia</li>
+                    <li itemprop="FooterItem" content="Footer">Dostawy</li>
+                </ul>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Produkty</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">iMac</li>
+                    <li itemprop="FooterItem" content="Footer">Apple Watch</li>
+                    <li itemprop="FooterItem" content="Footer">MacBook</li>
+                    <li itemprop="FooterItem" content="Footer">AirPods</li>
+                </ul>
+            </li>
+            <li itemprop="FooterItem" content="Footer" class="mt-5 text-sm font-semibold text-blue-500 w-full text-center md:text-start">Zakupy</li>
+            <li class="w-full">
+                <ul class=" text-gray-400 flex flex-col md:flex-row flex-wrap gap-2 md:gap-10 items-center justify-start">
+                    <li itemprop="FooterItem" content="Footer">Tax Free</li>
+                    <li itemprop="FooterItem" content="Footer">Raty</li>
+                    <li itemprop="FooterItem" content="Footer">Płatności</li>
+                    <li itemprop="FooterItem" content="Footer">AirPods</li>
+                    <li itemprop="FooterItem" content="Footer">Karta podarunkowa</li>
+                </ul>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+  </div>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const logoMenu = document.getElementById("logo-menu");
+      const hiddenMenu = document.getElementById("hidden-menu");
+    
+      logoMenu.addEventListener("click", function() {
+        if (hiddenMenu.style.display === "none" || hiddenMenu.style.display === "") {
+          hiddenMenu.style.display = "flex";
+        } else {
+          hiddenMenu.style.display = "none";
+        }
+      });
+    });
+</script>    
+
+</body>
+</html>
